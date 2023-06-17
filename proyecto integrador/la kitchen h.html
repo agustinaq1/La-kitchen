@@ -3,6 +3,7 @@
 <head>
 	 <link rel="stylesheet" href="la kitchen.css">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link src="java script la kitchen.js">
 <meta charset="UTF-8">
@@ -14,24 +15,20 @@
 <body>
 <div class="main">
 <header> 
-	
-<div class="topnav" id="myTopnav">
-  <a href="#home" class="active">Home</a>
-  <a href="#carta">Carta</a>
-  <a href="#contacto">Contacto</a>
-  <a href="#about">Nosotros</a>
-  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-    <i class="fa fa-bars"></i>
-  </a>
-</div>
+<div id="navbar">
+  <a href="la kitchen h.html">Home</a>
+  <a href="ni idea.html">Mostrador</a>
+  <a href="contacto.html">Contacto</a>
+  <a href="nosotros.html">Nosotros</a>
+</div>	
+
 </header>
-	
-	<div class="presentacion">
+	<div class="presentacion"> 
 		<div class= "logo"> 
 		<img src="imagenes/logo-606294398-1678222380-22beadcd68ab8c56eb7f0f32f1b470fc1678222381.png" alt="logo" style="width: 250px;height: 100px"> </div> 
-		<div class= "pet friendly"> 
-		<img src="imagenes/Sin título-2.png" alt="pet friendly" style= "width: 150px; height:100px;" > </div>
-	</div>
+		<div class= "petfriendly"> 
+		<img src="imagenes/Sin título-2.png" alt="pet friendly" style= "width: 170px; height:120px;" > </div>
+</div>
 		
    	<section>
 		<div class="dulce">
@@ -39,7 +36,7 @@
           	<img src="imagenes/Captura de Pantalla 2023-03-28 a la(s) 11.27.59.png" alt="croasant" style="width:250px;height:250px">
             <img src="imagenes/Captura de Pantalla 2023-03-28 a la(s) 11.25.18.png" alt="rollo de canela" style="width:250px;height: 250px">
             <img src="imagenes/Captura de Pantalla 2023-04-21 a la(s) 11.33.07.png" alt="cookies" style="width:250px;height:250px">
-			<img src="imagenes/Captura de Pantalla 2023-05-02 a la(s) 13.55.23.png" style="width:250px;height:250px" alt="medialuna">
+	
 		</div>
 
 		<div class="salado">
@@ -47,20 +44,20 @@
             <img src="imagenes/Captura de Pantalla 2023-04-21 a la(s) 11.33.52.png" alt=" chipas" style="width:250px;height:250px">
             <img src="imagenes/Captura de Pantalla 2023-04-21 a la(s) 11.34.10.png" alt="fosforito" style="width:250px; height:250px">
             <img src="imagenes/Captura de Pantalla 2023-04-21 a la(s) 11.34.32.png" alt="pletzalej" style="width:250px;height:250px">
-			<img src="imagenes/Captura de Pantalla 2023-05-02 a la(s) 13.55.58.png" alt="pletzalej" style="width:250px;height:250px">
+		
  		</div>
  	</section>
 
         <div class="carta"> 
-        	<a href="carta" > MIRÁ LA CARTA ACÁ </a>
+        	<a href="ni idea.html" > HACÉ TU PEDIDO ACÁ </a>
         </div> 
 
         <div class= "texto"> 
-			<img src="imagenes/Captura de Pantalla 2023-04-20 a la(s) 18.32.29.png" alt="texto del cafe" style="width:1400px;height:600px">
+			<img src="imagenes/Captura de Pantalla 2023-04-20 a la(s) 18.32.29.png" alt="texto del cafe" style="width:1400px;height:800px">
 		</div>
 
         <div class="direccion"> 
-        	<a href="https://goo.gl/maps/SoekY9wAnZGM1NK9A" >  Nuñez 3400, Saavedra/Coghlan </a>
+        	<a href="https://goo.gl/maps/SoekY9wAnZGM1NK9A" >  Encontranos en: NUÑEZ 3400, SAAVEDRA/COGHLAN </a>
         </div> 
 
 	<section>
@@ -83,30 +80,10 @@
 	</section>
 	
             <div class="comentarios"> 
-                <a href="comentarios" > DEJANOS TU COMENTARIO! </a>
+                <a href="contacto.html" > DEJANOS TU COMENTARIO! </a>
             </div> 
+	</div>
 
-</div>
-<footer> 
-			<div class="final"> 
-                <div class="envios"> 
-					<p> ENVÍOS DE MARTES A SÁBADOS </p>
-                    <p> En CABA y Zona Norte con 24hs de anticipación. </p>
-					<p> Lunes y Domingos no hay envío </p>
-				</div>
-					
-                <div class="pago">
-					<p> PODES PAGAR CON CUALQUIER TARJETA </p>
-					<p> POR MERCADO PAGO </p>
-                </div> 
-				
-                <div class="mensaje"> 
-					<p> TRABAJAMOS CON RESPETO Y DEDICACIÓN POR EL PRODUCTO</p>
-                   <p> Priorizamos el uso de productos orgánicos, chocolates de altísima calidad, </p>
-                    <p> huevos de campo y fiambres de pastura. Que lo disfrute!</p>
-                </div>
-			</div>
-</footer>
 	<script>
 function myFunction() {
   var x = document.getElementById("myLinks");
@@ -154,8 +131,44 @@ function myFunction() {
     x.className = "topnav";
   }
 }
-// JavaScript Document
+
 </script>
+<script>
+	window.onscroll = function() {myFunction()};
+
+var navbar = document.getElementById("navbar");
+var sticky = navbar.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}
+	window.onscroll = function() {myFunction()};
+
+var navbar = document.getElementById("navbar");
+var sticky = navbar.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}window.onscroll = function() {myFunction()};
+
+var navbar = document.getElementById("navbar");
+var sticky = navbar.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}</script>
 </body>
 </html>
 
